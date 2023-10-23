@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-info {
+  color: white;
+  position: absolute;
+  top: 3rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 3rem;
+}
+
+.tic-tac-toe {
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  aspect-ratio: 1/1;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1,
+.box2,
+.box4,
+.box5 {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.box3,
+.box6 {
+  border-bottom: 2px solid white;
+}
+
+.box7,
+.box8 {
+  border-right: 2px solid white;
+}
+
+.btn {
+  position: absolute;
+  bottom: 7rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  left: 43%;
+  opacity: 0;
+}
+.reset-button {
+  position: absolute;
+  bottom: 7rem;
+  right: 43%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.btn.active {
+  opacity: 1;
+}
+
+.reset-button.active {
+  opacity: 1;
+}
+
+.win {
+  background-color: green;
+}
+
+.score-board {
+  position: absolute;
+  bottom: 9.5rem;
+  height: 5rem;
+  width: 100%;
+  max-width: 25rem;
+  color: white;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#score-heading {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 14rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
